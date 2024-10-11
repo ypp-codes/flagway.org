@@ -4,14 +4,14 @@
 
 :root {
   --foreground: #0a0a0a;
-  --background: #f4f4f4;
+  --background: #ffffff;
 
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --foreground: #0a0a0a;
-    --background: #f4f4f4;
+    --background: #ffffff;
   }
 }
 
@@ -19,6 +19,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-anuphan)
+}
+
+nav {
+  @apply bg-cover bg-center filter brightness-150
 }
 
 .nav-item {
@@ -58,6 +62,10 @@ h6 {
   @apply text-base font-medium;
 }
 
+p {
+  @apply mt-5
+}
+
 a.prose {
   @apply underline;
 }
@@ -67,7 +75,7 @@ a.prose {
 }
 
 .landing-photo:hover {
-  @apply scale-[1.05] transition-all;
+  @apply scale-[1] md:scale-[1.05] transition-all;
 }
 
 @layer utilities {

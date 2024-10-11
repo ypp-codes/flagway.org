@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<div className="relative isolate">
 				<div
 					aria-hidden="true"
@@ -42,13 +42,11 @@ const Hero: React.FC = () => {
 					<div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
 						<div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
 							<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-								where students...
+								Where students
 								<TextCarousel />
 							</h1>
-							<p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-								Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-								labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-								mollit id pariatur in voluptate cillum.
+							<p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-[40rem]">
+								Flagway™ blends strategy, athleticism, and mathematical mastery in communities of young people around the world.
 							</p>
 							<div className="mt-10 flex items-center gap-x-6">
 								<Link
@@ -68,6 +66,7 @@ const Hero: React.FC = () => {
 									<Image
 										alt=""
 										src={Winners}
+										placeholder="blur"
 										height="200"
 										className="landing-photo aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg saturate-[1.1] contrast-[1.1]"
 									/>
@@ -78,6 +77,7 @@ const Hero: React.FC = () => {
 									<Image
 										alt=""
 										src={Outdoors}
+										placeholder="blur"
 										height="200"
 										className="landing-photo aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg saturate-[1.1] contrast-125"
 									/>
@@ -86,6 +86,7 @@ const Hero: React.FC = () => {
 									<Image
 										alt=""
 										src={FloorWork}
+										placeholder="blur"
 										height="200"
 										className="landing-photo aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg saturate-[1.1] brightness-125"
 									/>
@@ -96,6 +97,7 @@ const Hero: React.FC = () => {
 									<Image
 										alt=""
 										src={Team2}
+										placeholder="blur"
 										height="200"
 										className="landing-photo aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg saturate-[1.1] contrast-[1.1] brightness-110"
 									/>
@@ -104,6 +106,7 @@ const Hero: React.FC = () => {
 									<Image
 										alt=""
 										src={MIT}
+										placeholder="blur"
 										height="200"
 										className="landing-photo aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg saturate-[1.1] contrast-125"
 									/>
